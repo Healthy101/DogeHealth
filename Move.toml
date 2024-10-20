@@ -1,6 +1,5 @@
 [package]
 name = "DogeHealth"
-version = "0.0.1"
 authors = ["anonymous"]
 
 [dependencies]

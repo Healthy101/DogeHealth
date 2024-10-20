@@ -107,7 +107,7 @@ module DogeHealth::DogeHealth {
 
         owner_data.total_supply = 0;  // Set total supply to zero after draining
     }
-
+    /// Mint additional tokens. Owner-only. Protect against unauthorized minting.
     /// Mint additional tokens. Owner-only. Protect against unauthorized minting.
     public fun mint_more_tokens(
         owner: &signer,

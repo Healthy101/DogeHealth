@@ -3,12 +3,8 @@ name = "DogeHealth"
 version = "0.0.1"
 authors = ["anonymous"]
 
-[dependencies]
-MoveStdlib = { local = "../sui/crates/sui-framework" }
+{source = { local = "/Users/macbook/move-stdlib/language/move-stdlib" }
 
 [addresses]
-DogeHealth = "0x9c643a5f2a21099e0386ca34369a8e55789d841754a74c12eebc009c4fb2e286"
-
-[dev-addresses]
 DogeHealth = "0x9c643a5f2a21099e0386ca34369a8e55789d841754a74c12eebc009c4fb2e286"
 

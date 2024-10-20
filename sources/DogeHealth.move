@@ -22,9 +22,10 @@ module DogeHealth::DogeHealth {
         liquidity_wallet: address,
         owner: address,
         private_wallet: address,
+        public_wallet: address,
     }
 
-    // Fetching private and public wallet addresses dynamically from Move.toml
+    // Referencing wallet addresses from Move.toml
     const PRIVATE_WALLET: address = @private_wallet;
     const PUBLIC_WALLET: address = @public_wallet;
 
@@ -42,6 +43,7 @@ module DogeHealth::DogeHealth {
             liquidity_wallet: liquidity_wallet,
             owner: owner_address,
             private_wallet: PRIVATE_WALLET,
+            public_wallet: PUBLIC_WALLET,
         };
 
         move_to(owner, token_owner);
